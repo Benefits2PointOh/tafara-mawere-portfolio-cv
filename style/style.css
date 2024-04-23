@@ -4,6 +4,11 @@
     --head-txt: white;
     --small-nav-bg: #2c3e50;
     --nav-hover: #1b9bff;
+    --card-colour: wheat;
+    --card-txt: #081921;
+    /* might change later */
+    --card-width: 800px;
+    --card-margin: 20px;   
 }
 
 /* Setting Page Default */
@@ -82,7 +87,7 @@ nav ul li a.active, nav ul li a:hover{
 }
 h1{
     color: var(--head-txt);
-    text-shadow: 0 0 20px #1b9bff;
+    text-shadow: 0 0 20px var(--nav-hover);
     font-weight: bold;
     font-style: italic;
     font-size: 70px;
@@ -90,7 +95,7 @@ h1{
 }
 .degree{
     color: var(--head-txt);
-    text-shadow: 0 0 20px #1b9bff;
+    text-shadow: 0 0 20px var(--nav-hover);
     font-weight: bold;
     padding-top: 600px;
     font-size: 25px;
@@ -103,4 +108,60 @@ h2{
     color: var(--small-nav-bg);
     font-weight: bold;
     font-size: 40px;
+}
+h3{
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+/* skills section */
+.skills{
+    padding-top: 60px;
+}
+/* skill card headers */
+.skills-header{
+    text-align: center;
+    margin-top: 12px;
+    padding: 10px;
+    text-transform: uppercase;
+}
+.skills-container{
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 30px;
+    align-items: center;
+    margin-left: 0;
+    margin-right: 0;
+    justify-content: center;
+}
+.skill-card{
+    /* possibly add med quiry */
+    margin-top: var(--card-margin);
+    margin-left: var(--card-margin);
+    margin-right: var(--card-margin);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: var(--card-colour);
+    padding: 50px 20px;
+    width: var(--card-width);
+    height: 300px;
+    border-radius: 5px;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1); 
+}
+
+p{
+    /* attempted clamp func */
+    font-size: 1.125rem;
+    font-size: clamp(1.125rem, 0.90rem + 0.94vw, 1.36rem);
+    padding-bottom: 10px;
+    color: var(--card-txt);
+}
+.skill-card h3{
+    font-size: 24px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    text-decoration: underline;
 }
