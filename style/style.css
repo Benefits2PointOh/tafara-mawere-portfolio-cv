@@ -16,7 +16,7 @@
 }
 /* setting bg colour and font */
 body{
-    background: linear-gradient(90deg, rgba(0,0,0,1) 1%, rgba(211,211,211,1) 50%, rgba(0,0,0,1) 99%);
+    /* background: linear-gradient(90deg, rgba(0,0,0,1) 1%, rgba(211,211,211,1) 50%, rgba(0,0,0,1) 99%); */
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
@@ -63,4 +63,36 @@ nav ul li a.active, nav ul li a:hover{
     /* color: #000; */
     background: var(--nav-hover);
     transition: .5s;
+}
+
+/*hero section*/
+.hero{
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center; 
+    background-attachment: scroll;
+    background-image: url("/images/laptop.jpg");
+    background-position: center center;
+    background-repeat: none;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+h1{
+    color: var(--head-txt);
+    text-shadow: 0 0 20px #1b9bff;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 70px;
+    padding-top:90px;    
+}
+.degree{
+    color: var(--head-txt);
+    text-shadow: 0 0 20px #1b9bff;
+    font-weight: bold;
+    padding-top: 600px;
+    font-size: 25px;
 }
