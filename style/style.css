@@ -16,7 +16,7 @@
 }
 /* setting bg colour and font */
 body{
-    /* background: linear-gradient(90deg, rgba(0,0,0,1) 1%, rgba(211,211,211,1) 50%, rgba(0,0,0,1) 99%); */
+    background: linear-gradient(90deg, rgba(0,0,0,1) 1%, rgba(211,211,211,1) 50%, rgba(0,0,0,1) 99%);
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
@@ -60,7 +60,6 @@ nav ul li a{
     border-radius: 5px;
 }
 nav ul li a.active, nav ul li a:hover{
-    /* color: #000; */
     background: var(--nav-hover);
     transition: .5s;
 }
@@ -95,4 +94,13 @@ h1{
     font-weight: bold;
     padding-top: 600px;
     font-size: 25px;
+}
+/* sub header  */
+.sub-title{
+    color: var(--head-txt);
+}
+h2{
+    color: var(--small-nav-bg);
+    font-weight: bold;
+    font-size: 40px;
 }
