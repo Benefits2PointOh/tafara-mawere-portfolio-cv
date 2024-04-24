@@ -80,9 +80,6 @@ nav ul li a.active, nav ul li a:hover{
     background-image: url("/Portfolio/images/laptop.jpg");
     background-position: center center;
     background-repeat: none;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
     background-size: cover;
 }
 h1{
@@ -230,7 +227,7 @@ p{
 
 /* cv download section*/
 .cv{
-    height: 70vh;
+    height: 60vh;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -299,10 +296,22 @@ b {
     background: rgb(68, 255, 47);
 }
   
-/* .button:active .bottom {
-    margin: -20px 0 0 10px;
+/* Contact section */
+.contact {
+    border: solid 2px red;
+    height: 80vh;
+   
+    /* background-attachment: scroll;
+    background-image: url("/Portfolio/images/laptop.jpg");
+    background-position: center center;
+    background-repeat: none;
+    background-size: cover; */
 }
-  
-.button:active .top {
-    margin: -70px 0 0 10px;
-} */
+.contact-header{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    padding-top: 20px;
+    text-transform: uppercase;
+}
