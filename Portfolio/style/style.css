@@ -9,6 +9,7 @@
   /* might change later */
   --card-width: 600px;
   --card-margin: 20px;
+  --skill-height: 300px;
 }
 
 /* Setting Page Default */
@@ -134,15 +135,12 @@ h3 {
   grid-template-columns: repeat(2, auto);
   gap: 30px;
   align-items: center;
-  margin-left: 0;
-  margin-right: 0;
+  margin: 0;
   justify-content: center;
 }
 .skill-card {
   /* possibly add med quiry */
-  margin-top: var(--card-margin);
-  margin-left: var(--card-margin);
-  margin-right: var(--card-margin);
+  margin: var(--card-margin);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -150,7 +148,7 @@ h3 {
   background: var(--card-colour);
   padding: 50px 20px;
   width: var(--card-width);
-  height: 300px;
+  height: var(--skill-height);
   border-radius: 5px;
   box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
 }
