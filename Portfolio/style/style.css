@@ -42,7 +42,7 @@ nav {
   color: var(--head-txt);
   font-size: 35px;
   line-height: 80px;
-  padding: 0 50px;
+  padding: 0 20px;
   font-weight: bolder;
   height: 0;
   display: flex;
@@ -124,8 +124,8 @@ h3 {
 /* skill card headers */
 .skills-header {
   text-align: center;
-  margin-top: 12px;
-  padding: 10px;
+  margin-top: 0px;
+  padding: 50px 0;
   text-transform: uppercase;
 }
 .skills-container {
@@ -190,10 +190,10 @@ p {
 
 .project-card {
   margin: var(--card-margin);
-  padding: 0px;
+  padding: 30px 20px;
   display: flex;
   border-radius: 10px;
-  width: var(--card-width); /* Default for desktop */
+  width: 600px; /* Default for desktop */
   height: 450px; /* Default for desktop */
   background: var(--nav-hover); /* Change later */
   text-align: center;
@@ -212,12 +212,14 @@ p {
   display: flex;
   flex-direction: column;
   align-items: center;
+  border: solid 8px var(--small-nav-bg);
   width: 400px; /* default 4 desktop */
   height: 300px; /* default 4 desktop */
   border-radius: 10px;
 }
 .project-card-txt {
   font-size: 28px;
+  /* padding-top: 15px; */
   margin-top: 10px;
 }
 .card-description {
@@ -226,6 +228,24 @@ p {
   padding-top: 10px;
 }
 
+/* For tablet or smaller*/
+@media (max-width: 1024px) {
+  .skill-card {
+    width: 400px;
+    height: 250px;
+    margin: 0;
+  }
+
+  .project-card {
+    width: 400px;
+    height: 450px;
+    margin: 0;
+  }
+  .project-img {
+    width: 350px;
+    height: 250px;
+  }
+}
 
 /* cv download section*/
 .cv {
@@ -298,24 +318,22 @@ b {
 }
 
 /* Contact section */
+.contact-header h2 {
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: -40px;
+}
 .contact {
   height: 80vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  /* background-attachment: scroll;
-    background-image: url("/Portfolio/images/laptop.jpg");
-    background-position: center center;
-    background-repeat: none;
-    background-size: cover; */
 }
 
 .contact-container {
-  width: 85%;
+  width: 100%;
   background: wheat;
-  border-radius: 8px;
   padding: 10px 60px 25px 40px;
-  /* Maybe box shaddow... */
 }
 .contact-container .contact-content {
   display: flex;
