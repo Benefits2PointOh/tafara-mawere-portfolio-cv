@@ -401,5 +401,24 @@ b {
 }
 .right .input-box textarea {
   padding: 6px;
-  border: solid 2px red;
+}
+.right .sendBtn {
+  /* display: inline-block; */
+  margin-top: 20px;
+}
+.right .sendBtn input[type="button"] {
+    color: white;
+    font-size: 18px;
+    outline: none;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    background: var(--nav-hover);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.right .sendBtn input[type="button"]:hover {
+    background: var(--small-nav-bg);
+    scale: 1.2;
+    transition: 0.5s ease-in-out;
 }
