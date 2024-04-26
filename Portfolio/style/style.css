@@ -6,10 +6,12 @@
   --nav-hover: #27a0fd;
   --card-colour: wheat;
   --card-txt: #081921;
-  /* might change later */
+  --txtBox-bg: whitesmoke;
+  --txtBox-txt: #afafb6;
   --card-width: 600px;
+  --project-hight: 450px;
+  --skill-height: 300px; 
   --card-margin: 20px;
-  --skill-height: 300px;
 }
 
 /* Setting Page Default */
@@ -147,8 +149,8 @@ h3 {
   text-align: center;
   background: var(--card-colour);
   padding: 50px 20px;
-  width: var(--card-width);
-  height: var(--skill-height);
+  width: var(--card-width); /* Default for desktop */
+  height: var(--skill-height);  /* Default for desktop */
   border-radius: 5px;
   box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
 }
@@ -191,8 +193,8 @@ p {
   padding: 30px 20px;
   display: flex;
   border-radius: 10px;
-  width: 600px; /* Default for desktop */
-  height: 450px; /* Default for desktop */
+  width: var(--card-width); /* Default for desktop */
+  height: var(--project-hight); /* Default for desktop */
   background: var(--nav-hover); /* Change later */
   text-align: center;
   justify-content: center;
@@ -319,19 +321,20 @@ b {
 .contact-header h2 {
   text-align: center;
   text-transform: uppercase;
-  margin-bottom: -40px;
+  margin-bottom: 60px;
 }
-.contact {
+/* .contact {
   height: 80vh;
   display: flex;
   align-items: center;
   justify-content: center;
-}
+} */
 
 .contact-container {
   width: 100%;
-  background: wheat;
+  background: var(--card-colour);
   padding: 10px 60px 25px 40px;
+  bottom: 0;
 }
 .contact-container .contact-content {
   display: flex;
@@ -359,7 +362,7 @@ b {
   right: -45px;
   /* top: 50%; */
   transform: translate(-50%);
-  background: #afafb6;
+  background: var(--txtBox-txt);
 }
 /* Text */
 .contact-content .left .details {
@@ -405,7 +408,7 @@ b {
   border: none;
   outline: none;
   font-size: 18px;
-  background: #f0f1f8;
+  background: var(--txtBox-bg);
   border-radius: 6px;
   padding: 0 15px;
 }
@@ -420,7 +423,7 @@ b {
   margin-top: 20px;
 }
 .right .sendBtn input[type="button"] {
-  color: white;
+  color: var(--head-txt);
   font-size: 18px;
   outline: none;
   border: none;
@@ -431,9 +434,40 @@ b {
   transition: all 0.3s ease;
 }
 .right .sendBtn input[type="button"]:hover {
-  background: var(--small-nav-bg);
-  scale: 1.2;
-  transition: 0.5s ease-in-out;
+  background: #0082e6;
+  scale: 1.1;
+  transition: 0.4s ease-in-out;
 }
 
 /* footer */
+footer {
+    background: var(--head-bg);
+    text-align: center;
+}
+.socials{
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+}
+.socialsBtn{
+    background: var(--small-nav-bg);
+    color: var(--head-txt);
+    border: none;
+    font-size: 24px;
+    margin: 0 6px;
+    padding: 10px 12px;
+    border-radius: 50%;
+}
+/* Change colours later */
+.socialsBtn:hover{
+    background: rgba(44, 62, 80, 0.5);
+    scale: 1.3;
+}
+.socialsBtn{
+    vertical-align: middle;
+}
+.copyright{
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    color: white;
+}
