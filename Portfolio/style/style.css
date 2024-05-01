@@ -412,22 +412,22 @@ b {
 .right .input-box textarea {
   padding: 6px;
 }
-.right .sendBtn {
-  /* display: inline-block; */
+/* .right .sendBtn {
+  /* display: inline-block; *
   margin-top: 20px;
-}
-.right .sendBtn input[type="button"] {
+} */
+.right .sendBtn {
   color: var(--head-txt);
   font-size: 18px;
   outline: none;
   border: none;
-  padding: 8px 16px;
+  padding: 10px 20px;
   border-radius: 6px;
   background: var(--nav-hover);
   cursor: pointer;
   transition: all 0.3s ease;
 }
-.right .sendBtn input[type="button"]:hover {
+.right .sendBtn:hover {
   background: #0082e6;
   scale: 1.1;
   transition: 0.4s ease-in-out;

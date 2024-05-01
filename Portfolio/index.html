@@ -217,20 +217,20 @@
                     </p>
 
                     <!-- Form  -->
-                    <form action="#" method="get">
+                    <form action="https://api.web3forms.com/submit" method="POST">
+
+                        <input type="hidden" name="access_key" value="768a05ec-1e40-40e8-8ce3-1e5b0f417db4">
+
                         <div class="input-box">
-                            <input type="text" placeholder="Enter Your Name" />
+                            <input type="text" name="name" placeholder="Enter Your Name" required />
                         </div>
                         <div class="input-box">
-                            <input type="text" placeholder="Enter Your E-mail" />
+                            <input type="email" name="email" placeholder="Enter Your E-mail" required />
                         </div>
                         <div class="input-box message-box">
-                            <textarea name="message" id="" cols="30" rows="10"
-                                placeholder="What would you like to say?"></textarea>
+                            <textarea name="message" cols="30" rows="10" placeholder="What would you like to say?" required></textarea>
                         </div>
-                        <div class="sendBtn">
-                            <input type="button" value="Send Now" />
-                        </div>
+                        <button class="sendBtn" type="submit">Send Now</button>
                     </form>
                 </div>
             </div>
