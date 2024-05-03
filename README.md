@@ -1,2 +1,1 @@
-Benefits
-Some portfolio content
+My portfolio with a downloadable CV
