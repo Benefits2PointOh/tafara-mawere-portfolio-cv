@@ -1,4 +1,4 @@
-# Tafara Mawere — Portfolio with CV Download
+# Tafara Mawere — Portfolio
 
 A static personal portfolio site presenting skills, selected projects, professional information, and a downloadable CV section.
 
